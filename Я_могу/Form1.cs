@@ -92,7 +92,6 @@ namespace Я_могу
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //ПОИСК ОБУЧ
             myConnection = new MySqlConnection(connectString);
             myConnection.Open();
             string script = $"SELECT * FROM `Обучающиеся` WHERE `Фамилия` LIKE '%{textBox1.Text}%' OR `Имя` LIKE '%{textBox1.Text}%';";
